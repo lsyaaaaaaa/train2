@@ -69,7 +69,7 @@ class App extends React.Component {
           <br />
           <ButtonGroup aria-label="Basic example">
             <Button className='button' variant="primary">
-              <Link className="button text-white" to="/Popular/">
+              <Link className="button text-white" to="/Popular/All">
                 Popular
               </Link>
             </Button>
@@ -82,7 +82,7 @@ class App extends React.Component {
           <Suspense fallback={<div>Loading...</div>}>
             <Switch>
               <Route exact path="/" component={Popular}></Route>
-              <Route exact path="/Popular" component={Popular}></Route>
+              <Route exact path="/Popular/:name" component={Popular}></Route>
               <Route path="/Battle" component={Battle}></Route>
             </Switch>
           </Suspense>
