@@ -122,6 +122,7 @@ export default class App extends React.Component {
   handleNavClick = async (type = 'all', page = 1) => {
     const { cards } = this.state;
     let url = '';
+    this.props.history.push({ pathname: `/Popular/${type}`})
     switch (type) {
       case 'Javascript':
         url = 'https://api.github.com/search/repositories?q=stars:%3E1+language:javascript&sort=stars&order=desc&type=Repositories';

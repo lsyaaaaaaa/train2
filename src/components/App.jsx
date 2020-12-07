@@ -2,9 +2,10 @@ import React, { Suspense, lazy } from 'react';
 import {
   Container, Nav, Row, Col, ButtonGroup, Button
 } from 'react-bootstrap';
-import { HashRouter, Route, Link, Switch } from 'react-router-dom';
+import { HashRouter, Router, Route, Link, Switch } from 'react-router-dom';
 const Battle = lazy(() => import('@/pages/Battle.jsx'))
 import Popular from '@/pages/Popular.jsx';
+// import BattleAgo from '../components/BattleAgo'; 
 // import axios from 'axios'
 import { hot } from 'react-hot-loader/root'
 
